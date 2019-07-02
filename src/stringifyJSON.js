@@ -43,8 +43,8 @@ var stringifyJSON = function(obj) {
 			return '{}';
 		} else {
 			stringified.push(stringifyJSON(key) + `:` + stringifyJSON(obj[key]))
-		}
-  	})
+    }
+  })
   	return '{' + stringified + '}';
   }
 
